@@ -49,12 +49,15 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(favicon(path.join(__dirname, "public", "images", "favicon.ico")));
 
 // default value for title local
-app.locals.title = "Express - Generated with IronGenerator";
+app.locals.title = "Mongoose Movies and Celebrities";
 
 const index = require("./routes/index");
 app.use("/", index);
 
 const celebsRoutesVar = require("./routes/celebrities");
 app.use("/", celebsRoutesVar);
+
+const moviesRoutesVar = require("./routes/movies");
+app.use("/", moviesRoutesVar);
 
 module.exports = app;

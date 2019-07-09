@@ -3,6 +3,26 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF; }
+  color: #00b7ff; }
+
+.btn {
+  background-color: gray;
+  color: white;
+  padding: 5px 7px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold; }
+
+.btn-delete {
+  background-color: red; }
+
+.row {
+  display: flex;
+  padding: 10px;
+  align-items: baseline; }
+
+.col {
+  margin: 0 5px; }
 
 /*# sourceMappingURL=style.css.map */
